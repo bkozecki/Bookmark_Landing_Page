@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark | A Simple Bookmark Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="mobile_menu">
+      <div class="top_wrap">
+        <div class="top_div">
+          <img src="./images/logo-bookmark.svg" alt="" class="logo_mobile" />
+          <span id="closer">x</span>
+        </div>
+        <ul class="mobile_list">
+          <li class="mobile_list--item">
+            <a href="section--2" class="header_list--link">Features</a>
+          </li>
+          <li class="mobile_list--item">
+            <a href="section--1" class="header_list--link">Pricing</a>
+          </li>
+          <li class="mobile_list--item">
+            <a href="section--4" class="header_list--link">Contact</a>
+          </li>
+          <li class="mobile_list--item">
+            <button class="mobile_list--button">Login</button>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom_social">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="social" />
+        <img src="./images/icon-twitter.svg" alt="twitter" class="social" />
+      </div>
+    </div>
+    <header>
+      <nav>
+        <img src="./images/logo-bookmark.svg" alt="logo" />
+        <ul class="header_list">
+          <li class="header_list--item">
+            <a href="section--2" class="header_list--link">Features</a>
+          </li>
+          <li class="header_list--item">
+            <a href="section--1" class="header_list--link">Pricing</a>
+          </li>
+          <li class="header_list--item">
+            <a href="section--4" class="header_list--link">Contact</a>
+          </li>
+          <li class="header_list--item"><button>Login</button></li>
+        </ul>
+        <li class="header_list--item hamburger">
+          <img src="./images/icon-hamburger.svg" alt="menu" class="menu" />
+        </li>
+      </nav>
+    </header>
+    <main>
+      <section id="section--1">
+        <div class="sec_1_left_box">
+          <h1 class="sec_1--header">A Simple Bookmark Manager</h1>
+          <p class="sec_1--para">
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="sec_1-buttons">
+            <button class="sec_1--chrome">Get it on Chrome</button>
+            <button class="sec_1--firefox">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="sec_2_right_box">
+          <img src="./images/illustration-hero.svg" alt="" class="sec_1-img" />
+          <div class="backround_shape"></div>
+        </div>
+      </section>
+      <section id="section--2" class="section--hidden">
+        <h2 class="section_header">Features</h2>
+
+        <p class="sec_2--para para">
+          A Our aim is to make it quick and easy for you to access your
+          favourite websites. Your bookmarks sync between your devices so you
+          can access them on the go.
+        </p>
+        <div class="sec_2_selection">
+          <div class="sec_2_selection--item" data-tab="1">
+            Simple Bookmarking
+          </div>
+          <div class="sec_2_selection--item" data-tab="2">Speedy Searching</div>
+          <div class="sec_2_selection--item" data-tab="3">Easy Sharing</div>
+        </div>
+        <div class="accordion_wrap">
+          <div class="accordion_2 accordion-tab-1 active">
+            <div class="accordion_left">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt=""
+                class="sec_2-img img1"
+              />
+              <div class="backround_shape_right"></div>
+            </div>
+            <div class="accordion_right">
+              <h2 class="header">Bookmark in one click</h2>
+              <p class="para accordion_para">
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+
+              <button class="more_info">More Info</button>
+            </div>
+          </div>
+          <div class="accordion_2 accordion-tab-2">
+            <div class="accordion_left">
+              <img
+                src="./images/illustration-features-tab-2.svg"
+                alt=""
+                class="sec_2-img"
+              />
+              <div class="backround_shape_right"></div>
+            </div>
+            <div class="accordion_right">
+              <h2 class="header">Intelligent search</h2>
+              <p class="para accordion_para">
+                Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.
+              </p>
+              <button class="more_info">More Info</button>
+            </div>
+          </div>
+          <div class="accordion_2 accordion-tab-3">
+            <div class="accordion_left">
+              <img
+                src="./images/illustration-features-tab-3.svg"
+                alt=""
+                class="sec_2-img"
+              />
+              <div class="backround_shape_right"></div>
+            </div>
+            <div class="accordion_right">
+              <h2 class="header">Share your bookmarks</h2>
+              <p class="para accordion_para">
+                Easily share your bookmarks and collections with others. Create
+                a shareable link that you can send at the click of a button.
+              </p>
+              <button class="more_info">More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section--3" class="section--hidden">
+        <div class="sec_3--text">
+          <h2 class="header">Download the extension</h2>
+          <p class="para accordion_para">
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="sec_3--cards">
+          <div class="card card_chrome">
+            <img src="./images/logo-chrome.svg" alt="" />
+            <h2 class="card_header">Add to Chrome</h2>
+            <p class="card_text">Minimum version 62</p>
+            <div class="border_dotted"></div>
+
+            <button class="card_btn">Add & Install Extension</button>
+          </div>
+          <div class="card card_firefox">
+            <img src="./images/logo-firefox.svg" alt="" />
+            <h2 class="card_header">Add to Firefox</h2>
+            <p class="card_text">Minimum version 55</p>
+            <div class="border_dotted"></div>
+
+            <button class="card_btn">Add & Install Extension</button>
+          </div>
+          <div class="card card_opera">
+            <img src="./images/logo-opera.svg" alt="" />
+            <h2 class="card_header">Add to Opera</h2>
+            <p class="card_text">Minimum version 46</p>
+            <div class="border_dotted"></div>
+            <button class="card_btn">Add & Install Extension</button>
+          </div>
+        </div>
+      </section>
+      <section id="section--4" class="section--hidden">
+        <div class="faq">
+          <h2 class="header">Frequently Asked Questions</h2>
+          <div class="para">
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </div>
+
+          <!-- Question 1 -->
+          <div class="faq_content">
+            <div class="faq_question1 question">
+              <div class="faq_title" data-question="1">
+                What is Bookmark?
+                <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+              </div>
+              <!-- Answer 1 -->
+              <div class="faq_anwser anwser1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="faq_question2 question">
+              <div class="faq_title" data-question="2">
+                How can I request a new browser?
+                <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+              </div>
+              <!-- Answer 2 -->
+              <div class="faq_anwser anwser2">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="faq_question3 question">
+              <div class="faq_title" data-question="3">
+                Is there a mobile app?
+                <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+              </div>
+              <!-- Answer 3 -->
+              <div class="faq_anwser anwser3">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="faq_question4 question">
+              <div class="faq_title" data-question="4">
+                What about other Chromium browsers?
+                <img src="./images/icon-arrow.svg" alt="" class="arrow" />
+              </div>
+              <!-- Answer 4 -->
+              <div class="faq_anwser anwser4">
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in
+                placerat mi, at euismod dui. Aliquam vitae neque eget nisl
+                gravida pellentesque non ut velit.
+              </div>
+            </div>
+          </div>
+          <button class="more_info">More Info</button>
+        </div>
+      </section>
+      <section id="section--5" class="section--hidden">
+        <h4 class="section_5__heading">35,000+ already joined</h4>
+        <h2 class="section_5_header">Stay up-to-date with what we’re doing</h2>
+        <form action="#" id="form">
+          <div class="input_wrapper">
+            <div class="input">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email adress"
+              />
+              <img src="./images/icon-error.svg" alt="" class="errorImg" />
+            </div>
+            <div class="error_msg">
+              <span class="error_text">
+                Please make sure to put in a valid email adress
+              </span>
+            </div>
+          </div>
+          <button id="contactBtn">Contact Us</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_actions">
+        <img
+          src="./images/logo-bookmark.svg"
+          alt="logo-bookmark"
+          class="logo_footer"
+        />
+        <ul class="footer_list">
+          <li class="list_item">
+            <a href="section--2" class="header_list--link">Features</a>
+          </li>
+          <li class="list_item">
+            <a href="section--1" class="header_list--link">Pricing</a>
+          </li>
+          <li class="list_item">
+            <a href="section--4" class="header_list--link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social_wrapper">
+        <img src="./images/icon-facebook.svg" alt="facebook" class="social" />
+        <img src="./images/icon-twitter.svg" alt="twitter" class="social" />
+      </div>
+    </footer>
+  </body>
+</html>
