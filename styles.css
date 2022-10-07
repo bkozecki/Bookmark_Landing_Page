@@ -56,7 +56,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin-top: 3rem;
 }
 .mobile_list--item {
